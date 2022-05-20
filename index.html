@@ -1,10 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>insaneFactory</title>
-	</head>
-	<body>
-		<p>Visit our website here: <a href="https://insanefactory.com/">https://insanefactory.com/</a>
-	</body>
+  <head>
+    <title>insaneFactory</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Manuel Freiholz, Michael Stein">
+    <meta name="description" content="Developer Group Homepage of insaneFactory">
+    <meta name="keywords" content="TS3VIDEO, iF.SVNAdmin, HumbleLogging, Roundcube Plugin Persistent Login, insaneSums, ColorPicker, Software Development">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Audiowide" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/iflogo-16x16.png" />
+    <script type="text/javascript" src="thirdparty/jquery/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+
+    <div class="top-nav">
+      <div class="logo"><a href=""><img src="img/iflogo-60x60.png" width="60" height="60"></a></div>
+      <div class="title">Home</div>
+      <ul class="links">
+        <li><a href="">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <ul class="menutoggle">
+        <li><a href=""><img src="img/ic_menu_black_36dp.png"></a></li>
+      </ul>
+    </div>
+
+    <div class="header">
+      <h1>insaneFactory</h1>
+      <h2>Keeping it simple</h2>
+    </div>
+
+    <div class="contentsections">
+
+      <!--
+        about
+      -->
+      <a name="about" class="anchor"></a>
+      <section class="about">
+        <h1>We are</h1>
+        <div class="content">
+            A group of passionate developers who like to play with new technologies and build tools for everyday use.
+            You may follow us on our Twitter accounts: <a class="twitterlink" href="https://twitter.com/mfreiholz">@mfreiholz</a> / <a class="twitterlink" href="https://twitter.com/ifatsam">@ifatsam</a>
+            <br><br>
+            <!-- You may also visit our <a href="http://forum.insanefactory.com">community forum</a> for general news and discussions. -->
+        </div>
+      </section>
+      <div class="separator"></div>
+
+      <!--
+        projects
+      -->
+      <a name="projects" class="anchor"></a>
+      <section class="projects">
+        <h1>Our current projects</h1>
+        <div class="content">
+          <div class="project">
+            <div class="title">TS3VIDEO</div>
+            <div class="description">TS3VIDEO extends the already great voice communication software TeamSpeak with video conferencing functionality. The project provides the streaming-server and client-plugin component.</div>
+            <div class="links"><a href="https://mfreiholz.de/ts3video">Homepage</a></div>
+          </div>
+          <div class="project">
+            <div class="title">iF.SVNAdmin</div>
+            <div class="description">The iF.SVNAdmin application is a web based GUI to your Subversion authorization file. It is based on PHP 5.3 and requires a web server (Apache) to be installed. The application doesn’t need a database back end or anything similar, it is completely based on the Subversion authorization- and user authentication file. (Inludes LDAP support for users and groups)</div>
+            <div class="links"><a href="http://svnadmin.insanefactory.com/">Homepage</a> | <img src="img/GitHub-Mark-64px.png" width="16" height="16"> <a href="https://github.com/mfreiholz/iF.SVNAdmin">Sources on Github</a></div>
+          </div>
+          <div class="project">
+            <div class="title">RC Persistent Login</div>
+            <div class="description">This server-side plugin is useful for all Roundcube users who don’t like to log into their mail account each time they open their browser. The plugin stores a persistent login cookie which automatically logs the user in the next time he or she visits the Roundcube web mailer.</div>
+            <div class="links"><img src="img/GitHub-Mark-64px.png" width="16" height="16"> <a href="https://github.com/mfreiholz/Roundcube-Persistent-Login-Plugin">Sources on Github</a></div>
+          </div>
+          <div class="project">
+            <div class="title">HumbleLogging (C/C++)</div>
+            <div class="description">HumbleLogging is a lightweight C++ logging framework. It aims to be extendible, easy to understand and as fast as possible.</div>
+            <div class="links"><img src="img/GitHub-Mark-64px.png" width="16" height="16"> <a href="https://github.com/mfreiholz/humble-logging-library">Sources on Github</a></div>
+          </div>
+          <div class="project">
+            <div class="title">insaneSums</div>
+            <div class="description">insaneSums is a simple tool that allows you to calculate different hashes on files to verify their integrity. It is programmed in C++ and features a <a href="http://www.qt.io/" target="_blank">Qt</a> powered GUI for easy cross platform portability. The hash algorithms are provided by the <a href="http://www.cryptopp.com/" target="_blank">Crypto++</a> library.</div>
+            <div class="links">Download: <a href="http://downloads.insanefactory.com/insaneSums-1.3_Win64.zip">Windows (64 bit)</a> | Requires: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145" target="_blank">Visual C++ Redistributable for Visual Studio 2015</a></div>
+          </div>
+          <!--<div class="project">
+            <div class="title">ColorPicker</div>
+            <div class="description">ColorPicker is a tool to easily pick a color on your windows desktop. It features a Qt powered GUI.</div>
+            <div class="links"><a href="#">Homepage</a> | <img src="img/GitHub-Mark-64px.png" width="16" height="16"> <a href="#">Sources on Github</a></div>
+          </div>-->
+        </div>
+      </section>
+      <div class="separator"></div>
+
+    </div>
+
+    <!--
+      footer
+    -->
+    <div class="footer">
+      <div class="copyright">Copyright &copy; 2015 insaneFactory</div>
+    </div>
+
+    <!--
+      mobile navigation
+    -->
+    <script type="text/javascript">
+    jQuery('.menutoggle a').click(function (e) {
+      e.preventDefault();
+      var eLinks = jQuery('.top-nav ul.links');
+      eLinks.toggle();
+    });
+    </script>
+
+    <!--
+      analytics
+    -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61191413-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
 </html>
